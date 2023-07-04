@@ -1,9 +1,23 @@
+import { lazy, Suspense } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar/navbar";
+
 const App = () => {
 
+
+
   return (
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <BrowserRouter>
+      <Navbar/>
+        <Suspense fallback={<>Loading...</>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </>
   )
 }
 
