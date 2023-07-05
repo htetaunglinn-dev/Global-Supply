@@ -6,3 +6,7 @@
     /* font-family: 'Agdasima', sans-serif; */
     font-family: 'Roboto', sans-serif;
 }
+
+.card {
+    background: linear-gradient(45deg, transparent 45px, #F5F5F5 0);
+}

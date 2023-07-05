@@ -2,6 +2,7 @@ import hero_background from 'assets/background.png'
 import { VideoPlayer } from 'components/Navbar/VideoPlayer'
 import { IoIosArrowForward } from 'react-icons/io'
 import AboutUs from './AboutUs'
+import BusinessSection from './BusinessSection'
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
         <img
           src={hero_background}
           alt='hero-background'
-          className='h-[100vh] w-[95%] object-cover'
+          className='h-[100vh] w-[95%] object-cover shadow-md'
         />
         <div className='absolute top-0 h-[100vh] w-[95%]  flex justify-center items-center'>
           <div className='flex w-[80%]'>
@@ -27,7 +28,7 @@ const Home = () => {
               </div>
 
               <a href='#'>
-                <div className='flex items-center justify-between text-xs w-[180px] pl-4 pr-2 py-3 bg-black hover:bg-black/80 transition-all duration-300 ease-out text-white rounded-md shadow-sm '>
+                <div className='flex items-center justify-between text-xs w-[180px] pl-4 pr-2 py-3 bg-black hover:bg-black/80 shadow-md transition-all duration-300 ease-out text-white rounded-md'>
                   <span>EXPLORE THE BEST </span>
                   <IoIosArrowForward />
                 </div>
@@ -42,7 +43,11 @@ const Home = () => {
         </div>
       </section>
 
+      {/* About us section */}
       <AboutUs />
+
+      {/* Business Section */}
+      <BusinessSection />
     </div>
   )
 }

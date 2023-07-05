@@ -3,7 +3,7 @@ import aboutus from 'assets/aboutus.jpg'
 
 const AboutUs = () => {
   return (
-    <section className='w-full h-[100vh] bg-secondary py-32 flex justify-center text-white'>
+    <section className='w-full bg-secondary py-32 flex justify-center text-white'>
       <div className='ml-[4.5%] w-[86%] flex'>
         {/* Left side */}
         <div className='basis-1/2'>
@@ -41,7 +41,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div>
-            <img src={aboutus} alt='worker' className='rounded-lg' />
+            <img src={aboutus} alt='worker' className='rounded-lg shadow-md' />
           </div>
         </div>
       </div>
