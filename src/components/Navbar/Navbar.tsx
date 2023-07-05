@@ -1,11 +1,11 @@
-import logo from 'assets/logo.png'
+import logo from 'assets/ENCO.svg'
 
 
 const Navbar = () => {
 
 
   return (
-      <nav className='bg-primary/90 px-5 py-3'>
+      <nav className='absolute z-50 top-0 right-0 left-0 pl-5 pr-10 py-3 bg-white/20 backdrop:blur-lg'>
         <div className='flex justify-between items-center'>
           <img src={logo} alt="company logo" className='w-20'/>
 
@@ -15,8 +15,8 @@ const Navbar = () => {
           </section>
         </div>
 
-        <div>
-          <ul className='flex gap-5 text-white'>
+        <div className='px-5'>
+          <ul className='flex gap-5 text-black font-semi-bold tracking-wide'>
             <li>
               <a href="#">About Us</a>
             </li>
