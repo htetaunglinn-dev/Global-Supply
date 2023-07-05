@@ -11,6 +11,10 @@ export default {
         'secondary':'#30475E',
         'light_red':'#F05454',
         'milk':'#F5F5F5'
+      },
+      fontFamily:{
+        'Roboto':['Roboto', 'sans-serif'],
+        'Agdasima':['Agdasima', 'sans-seri'],
       }
     },
   },
