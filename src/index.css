@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: 'Agdasima', sans-serif;
+* {
+    /* font-family: 'Agdasima', sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
