@@ -9,23 +9,14 @@ import LoadingScreen from 'components/LoadingScreen/LoadingScreen'
 import BusinessSection from './BusinessSection'
 
 const Home = () => {
-  const [isWebsiteReady, setIsWebsiteReady] = useState(false)
   const [areImagesLoaded, setAreImagesLoaded] = useState(false)
 
-  console.log('isWebsiteReady', isWebsiteReady)
   console.log('areImagesLoaded', areImagesLoaded)
 
   useEffect(() => {
-    const handleWebsiteLoad = () => {
-      setIsWebsiteReady(true)
-    }
-
     const handleImageLoad = () => {
       setAreImagesLoaded(true)
     }
-
-    // Add event listener for website readiness
-    window.addEventListener('load', handleWebsiteLoad)
 
     // Preload images and listen for image load events
     const imageUrls = [hero_background]
@@ -37,7 +28,6 @@ const Home = () => {
 
     // Clean up event listeners when component unmounts
     return () => {
-      window.removeEventListener('load', handleWebsiteLoad)
       imageUrls.forEach(url => {
         const img = new Image()
         img.src = url
@@ -48,7 +38,7 @@ const Home = () => {
 
   return (
     <>
-      {isWebsiteReady && areImagesLoaded ? (
+      {areImagesLoaded ? (
         <div className='bg-secondary overflow-y-hidden'>
           <section className='relative min-h-screen rounded-br-lg'>
             <img
