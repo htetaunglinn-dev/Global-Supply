@@ -45,7 +45,7 @@ const Home = () => {
 
   return (
     <>
-      {isWebsiteReady ? (
+      {isWebsiteReady && areImagesLoaded ? (
         <div className='bg-secondary overflow-y-hidden'>
           <section className='relative min-h-screen rounded-br-lg'>
             <img
