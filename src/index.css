@@ -1,4 +1,10 @@
 @tailwind base;
+
+/* Chrome, Edge, and Safari */
+.horizontal-hidden::-webkit-scrollbar {
+  display: none;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -41,5 +47,11 @@
     6.23% 100%,
     3.12% 96.88%,
     0% 93.77%
+  );
+}
+
+.cut_top {
+  clip-path: polygon(
+    5% 0, 100% 0, 100% 100%, 0 100%, 0 12%
   );
 }
