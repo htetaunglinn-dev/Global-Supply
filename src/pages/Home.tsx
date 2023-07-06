@@ -1,7 +1,7 @@
 import hero_background from 'assets/background.png'
 import { VideoPlayer } from 'components/Navbar/VideoPlayer'
 import { IoIosArrowForward } from 'react-icons/io'
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Fade } from 'react-awesome-reveal'
 
 import AboutUs from './AboutUs'
 import BusinessSection from './BusinessSection'
