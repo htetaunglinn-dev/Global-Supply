@@ -41,7 +41,11 @@ const AboutUs = () => {
             </div>
           </div>
           <div>
-            <img src={aboutus} alt='worker' className='rounded-lg shadow-md' />
+            <img
+              src={aboutus}
+              alt='worker'
+              className='rounded-lg shadow-md cut_left'
+            />
           </div>
         </div>
       </div>

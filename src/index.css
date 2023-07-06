@@ -8,5 +8,14 @@
 }
 
 .card {
-    background: linear-gradient(45deg, transparent 45px, #F5F5F5 0);
+    background: linear-gradient(45deg, transparent 45px, #ffffff 0);
+    cursor: pointer;
+}
+
+.cut__right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 93.77%, 97.08% 96.88%, 94.17% 100%, 33.33% 100%, 0% 100%);
+}
+
+.cut_left {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 93.77%, 100% 100%, 94.17% 100%, 33.33% 100%, 6.23% 100%, 3.12% 96.88%, 0% 93.77%);
 }

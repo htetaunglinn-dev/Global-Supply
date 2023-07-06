@@ -11,7 +11,7 @@ const Home = () => {
         <img
           src={hero_background}
           alt='hero-background'
-          className='h-[100vh] w-[95%] object-cover shadow-md'
+          className='h-[100vh] w-[95%] object-cover shadow-md cut__right'
         />
         <div className='absolute top-0 h-[100vh] w-[95%]  flex justify-center items-center'>
           <div className='flex w-[80%]'>
