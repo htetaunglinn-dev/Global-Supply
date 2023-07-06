@@ -10,18 +10,36 @@ import BusinessSection from './BusinessSection'
 
 const Home = () => {
   const [isWebsiteReady, setIsWebsiteReady] = useState(false)
+  const [areImagesLoaded, setAreImagesLoaded] = useState(false)
 
   useEffect(() => {
     const handleWebsiteLoad = () => {
       setIsWebsiteReady(true)
     }
 
-    // Add event listeners for website readiness
+    const handleImageLoad = () => {
+      setAreImagesLoaded(true)
+    }
+
+    // Add event listener for website readiness
     window.addEventListener('load', handleWebsiteLoad)
+
+    // Preload images and listen for image load events
+    const imageUrls = [hero_background]
+    imageUrls.forEach(url => {
+      const img = new Image()
+      img.src = url
+      img.addEventListener('load', handleImageLoad)
+    })
 
     // Clean up event listeners when component unmounts
     return () => {
       window.removeEventListener('load', handleWebsiteLoad)
+      imageUrls.forEach(url => {
+        const img = new Image()
+        img.src = url
+        img.removeEventListener('load', handleImageLoad)
+      })
     }
   }, [])
 
@@ -54,8 +72,8 @@ const Home = () => {
 
                   <div className='my-5 drop-shadow-sm font-normal'>
                     <Fade cascade>
-                      <p>Building stronger future</p>
-                      <p>one steel beam at a time</p>
+                      <p>Building stronger environment</p>
+                      <p>the biggest supply chain</p>
                     </Fade>
                   </div>
 

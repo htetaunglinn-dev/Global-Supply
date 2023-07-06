@@ -25,7 +25,10 @@ const BusinessSection = () => {
         <div className='grid grid-cols-3 gap-20'>
           <Fade cascade direction='up'>
             {stocks.map(data => (
-              <div className='rounded-lg card drop-shadow-md  transition-all duration-300 ease-out hover:scale-105'>
+              <div
+                key={data.img}
+                className='rounded-lg card drop-shadow-md  transition-all duration-300 ease-out hover:scale-105'
+              >
                 <div className='overflow-hidden'>
                   <img
                     src={data.img}
