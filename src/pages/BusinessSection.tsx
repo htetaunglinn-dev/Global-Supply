@@ -9,8 +9,8 @@ const BusinessSection = () => {
         <Fade direction='up' cascade delay={0.3}>
           <h2 className='font-semibold'>BUSINESS SEGMENTS</h2>
 
-          <div className='flex justify-between items-center my-20'>
-            <p className=' text-5xl'>
+          <div className='flex flex-col items-start sm:flex-row sm:justify-between sm:items-center my-20'>
+            <p className=' text-5xl mb-6 sm:mb-0'>
               OUR <br /> SERVICES
             </p>
             <a href='#'>
@@ -22,18 +22,18 @@ const BusinessSection = () => {
           </div>
         </Fade>
 
-        <div className='grid grid-cols-3 gap-20'>
-          <Fade cascade direction='up'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20'>
+          <Fade cascade direction='up' delay={0}>
             {stocks.map(data => (
               <div
                 key={data.img}
-                className='rounded-lg card drop-shadow-md  transition-all duration-300 ease-out hover:scale-105'
+                className='rounded-lg card drop-shadow-md  transition-all duration-300 ease-out hover:scale-105 group'
               >
-                <div className='overflow-hidden'>
+                <div className='overflow-hidden '>
                   <img
                     src={data.img}
                     alt='hydraulic tubing'
-                    className='object-cover rounded-t-lg '
+                    className='object-cover rounded-t-lg grayscale-[50%] group-hover:grayscale-0'
                   />
                 </div>
                 <p className='p-7 text-right'>{data.label}</p>

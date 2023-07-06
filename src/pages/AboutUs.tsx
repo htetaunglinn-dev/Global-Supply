@@ -4,8 +4,8 @@ import { Fade } from 'react-awesome-reveal'
 
 const AboutUs = () => {
   return (
-    <section className='w-full min-h-screen bg-secondary py-32 flex justify-center text-white'>
-      <div className='ml-[4.5%] w-[86%] flex'>
+    <section className='w-full min-h-screen bg-secondary py-32 flex  justify-center text-white'>
+      <div className='ml-[4.5%] w-[86%] flex flex-col md:flex-row gap-5'>
         {/* Left side */}
         <div className='basis-1/2'>
           <Fade cascade delay={0.3} direction='left'>
@@ -27,7 +27,7 @@ const AboutUs = () => {
 
         {/* Right side */}
         <div className='basis-1/2'>
-          <div className='flex gap-10 mb-20'>
+          <div className='flex flex-col lg:flex-row gap-10 mb-20'>
             <Fade cascade direction='up'>
               <div className='basis-1/2 text-milk'>
                 Ignite Your Journey to Unprecedented Success with Empowering

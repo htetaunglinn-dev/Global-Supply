@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal'
 import { useState, useEffect } from 'react'
 
 import AboutUs from './AboutUs'
-import LoadingScreen from 'components/LoadingScreen.tsx/LoadingScreen'
+import LoadingScreen from 'components/LoadingScreen/LoadingScreen'
 import BusinessSection from './BusinessSection'
 
 const Home = () => {
@@ -51,14 +51,14 @@ const Home = () => {
             <img
               src={hero_background}
               alt='hero-background'
-              className='h-[100vh] w-[95%] object-cover shadow-md cut__right'
+              className='min-h-screen w-full lg:w-[95%] object-cover shadow-md cut__right'
             />
             {/* Intor section */}
-            <div className='absolute top-0 h-[100vh] w-[95%] xl:pt-10 flex justify-center items-center'>
+            <div className='absolute top-0 h-[100vh] w-full lg:w-[95%] lg:pt-20 xl:pt-0 flex justify-center items-center'>
               <div className='flex w-[80%]'>
                 {/* Left side */}
                 <section className='basis-1/2'>
-                  <h1 className='text-9xl font-light'>
+                  <h1 className='text-[3rem] sm:text-7xl md:text-8xl lg:text-9xl font-light'>
                     <Fade cascade damping={0.5}>
                       <ul>
                         <li>WE BUILD</li>
@@ -88,7 +88,7 @@ const Home = () => {
                 </section>
 
                 {/* Right side */}
-                <section className='basis-1/2 flex justify-center items-end'>
+                <section className='basis-1/2 hidden xl:flex justify-center items-end'>
                   <Fade delay={0.3}>
                     <VideoPlayer />
                   </Fade>
