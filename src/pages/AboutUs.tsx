@@ -12,7 +12,7 @@ const AboutUs = () => {
             <h2 className='font-normal'>ABOUT US</h2>
 
             <p className='text-3xl mt-10 mb-6'>
-              WE EXPLORE <br />
+              WE SUPPLY <br />
               TO EMPOWER
             </p>
 

@@ -12,6 +12,9 @@ const Home = () => {
   const [isWebsiteReady, setIsWebsiteReady] = useState(false)
   const [areImagesLoaded, setAreImagesLoaded] = useState(false)
 
+  console.log('isWebsiteReady', isWebsiteReady)
+  console.log('areImagesLoaded', areImagesLoaded)
+
   useEffect(() => {
     const handleWebsiteLoad = () => {
       setIsWebsiteReady(true)

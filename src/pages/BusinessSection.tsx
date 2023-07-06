@@ -23,7 +23,7 @@ const BusinessSection = () => {
         </Fade>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20'>
-          <Fade cascade direction='up' delay={0}>
+          <Fade cascade direction='up' fraction={0} duration={500}>
             {stocks.map(data => (
               <div
                 key={data.img}

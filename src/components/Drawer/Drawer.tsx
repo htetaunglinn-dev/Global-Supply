@@ -41,50 +41,32 @@ export default function Drawer ({ isOpen, setIsOpen }: DrawerProps) {
             {/* Links */}
             <ul className='flex flex-col space-y-4 mt-4'>
               <li>
-                <a
-                  href='#'
-                  className='hover:text-primary transition-all ease-out duration-300'
-                >
+                <a href='#' className='link'>
                   About Us
                 </a>
               </li>
               <li>
-                <a
-                  href='#'
-                  className='hover:text-primary transition-all ease-out duration-300'
-                >
+                <a href='#' className='link'>
                   Products and services
                 </a>
               </li>
               <li>
-                <a
-                  href='#'
-                  className='hover:text-primary transition-all ease-out duration-300'
-                >
+                <a href='#' className='link'>
                   Manufacturing process
                 </a>
               </li>
               <li>
-                <a
-                  href='#'
-                  className='hover:text-primary transition-all ease-out duration-300'
-                >
+                <a href='#' className='link'>
                   Research Development
                 </a>
               </li>
               <li>
-                <a
-                  href='#'
-                  className='hover:text-primary transition-all ease-out duration-300'
-                >
+                <a href='#' className='link'>
                   Case Study
                 </a>
               </li>
               <li>
-                <a
-                  href='#'
-                  className='hover:text-primary transition-all ease-out duration-300'
-                >
+                <a href='#' className='link'>
                   News
                 </a>
               </li>

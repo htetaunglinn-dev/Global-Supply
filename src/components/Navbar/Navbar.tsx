@@ -39,22 +39,34 @@ const Navbar = () => {
       <div className='px-5 hidden lg:block'>
         <ul className='flex gap-5 text-black font-semi-bold tracking-wide'>
           <li>
-            <a href='#'>About Us</a>
+            <a href='#' className='link'>
+              About Us
+            </a>
           </li>
           <li>
-            <a href='#'>Products and services</a>
+            <a href='#' className='link'>
+              Products and services
+            </a>
           </li>
           <li>
-            <a href='#'>Manufacturing process</a>
+            <a href='#' className='link'>
+              Manufacturing process
+            </a>
           </li>
           <li>
-            <a href='#'>Research Development</a>
+            <a href='#' className='link'>
+              Research Development
+            </a>
           </li>
           <li>
-            <a href='#'>Case Study</a>
+            <a href='#' className='link'>
+              Case Study
+            </a>
           </li>
           <li>
-            <a href='#'>News</a>
+            <a href='#' className='link'>
+              News
+            </a>
           </li>
         </ul>
       </div>
