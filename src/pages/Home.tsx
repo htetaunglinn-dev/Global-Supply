@@ -1,43 +1,60 @@
 import hero_background from 'assets/background.png'
 import { VideoPlayer } from 'components/Navbar/VideoPlayer'
 import { IoIosArrowForward } from 'react-icons/io'
+import { Fade, Slide } from 'react-awesome-reveal'
+
 import AboutUs from './AboutUs'
 import BusinessSection from './BusinessSection'
 
 const Home = () => {
   return (
-    <div className='bg-secondary'>
+    <div className='bg-secondary overflow-y-hidden'>
       <section className='relative rounded-br-lg'>
         <img
           src={hero_background}
           alt='hero-background'
           className='h-[100vh] w-[95%] object-cover shadow-md cut__right'
         />
-        <div className='absolute top-0 h-[100vh] w-[95%]  flex justify-center items-center'>
+
+        {/* Intor section */}
+        <div className='absolute top-0 h-[100vh] w-[95%] xl:pt-10 flex justify-center items-center'>
           <div className='flex w-[80%]'>
             {/* Left side */}
             <section className='basis-1/2'>
               <h1 className='text-9xl font-light'>
-                WE BUILD <br /> <span className='font-bold'>STRONGER</span>
-                <br /> FUTURE
+                <Fade cascade damping={0.5}>
+                  <ul>
+                    <li>WE BUILD</li>
+                    <li>
+                      <span className='font-bold'>STRONGER</span>
+                    </li>
+                    <li>FUTURE</li>
+                  </ul>
+                </Fade>
               </h1>
 
               <div className='my-5 drop-shadow-sm font-normal'>
-                <p>Building stronger future</p>
-                <p>one steel beam at a time</p>
+                <Fade cascade>
+                  <p>Building stronger future</p>
+                  <p>one steel beam at a time</p>
+                </Fade>
               </div>
 
-              <a href='#'>
-                <div className='flex items-center justify-between text-xs w-[180px] pl-4 pr-2 py-3 bg-black hover:bg-black/80 shadow-md transition-all duration-300 ease-out text-white rounded-md'>
-                  <span>EXPLORE THE BEST </span>
-                  <IoIosArrowForward />
-                </div>
-              </a>
+              <Fade>
+                <a href='#'>
+                  <div className='flex items-center justify-between text-xs w-[180px] pl-4 pr-2 py-3 bg-black hover:bg-black/80 shadow-md transition-all duration-300 ease-out text-white rounded-md'>
+                    <span>EXPLORE THE BEST </span>
+                    <IoIosArrowForward />
+                  </div>
+                </a>
+              </Fade>
             </section>
 
             {/* Right side */}
             <section className='basis-1/2 flex justify-center items-end'>
-              <VideoPlayer />
+              <Fade delay={0.3}>
+                <VideoPlayer />
+              </Fade>
             </section>
           </div>
         </div>
