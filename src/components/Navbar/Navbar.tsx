@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
-    <nav className='absolute z-50 top-0 right-0 lg:right-[5%] left-0 pl-5 pr-10 py-3 bg-white/20 backdrop:blur-lg'>
+    <nav className='absolute z-50 top-0 right-0 lg:right-[5%] left-0 pl-5 pr-10 py-3 bg-white/20 backdrop:blur-lg select-none'>
       <div className='flex justify-between items-center'>
         <img src={logo} alt='company logo' className='w-20 ' />
 

@@ -39,16 +39,16 @@ const Home = () => {
   return (
     <>
       {areImagesLoaded ? (
-        <div className='bg-secondary overflow-y-hidden'>
+        <div className='bg-secondary scroll-smooth overflow-y-hidden select-none'>
           <section className='relative min-h-screen rounded-br-lg'>
             <img
               src={hero_background}
               alt='hero-background'
               className='min-h-screen w-full lg:w-[95%] object-cover shadow-md cut__right'
             />
-            {/* Intor section */}
-            <div className='absolute top-0 h-[100vh] w-full lg:w-[95%] lg:pt-20 xl:pt-0 flex justify-center items-center'>
-              <div className='flex w-[80%]'>
+            {/* Intro section */}
+            <div className='absolute top-0 h-[100vh] w-full lg:w-[95%] flex justify-center items-center'>
+              <div className='flex w-[80%] pt-20 '>
                 {/* Left side */}
                 <section className='basis-1/2'>
                   <h1 className='text-[3rem] sm:text-7xl md:text-8xl lg:text-9xl font-light'>
