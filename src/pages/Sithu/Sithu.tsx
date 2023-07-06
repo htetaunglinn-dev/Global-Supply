@@ -1,4 +1,4 @@
-
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
 const Sithu = () => {
     return (
