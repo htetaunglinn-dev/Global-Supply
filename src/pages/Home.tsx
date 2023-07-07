@@ -4,9 +4,12 @@ import { IoIosArrowForward } from 'react-icons/io'
 import { Fade } from 'react-awesome-reveal'
 import { useState, useEffect } from 'react'
 
-import AboutUs from './AboutUs'
 import LoadingScreen from 'components/LoadingScreen/LoadingScreen'
+import AboutUs from './AboutUs'
 import BusinessSection from './BusinessSection'
+import Management from './Management'
+import Footer from './Footer'
+import Leading from './Leading'
 
 const Home = () => {
   const [areImagesLoaded, setAreImagesLoaded] = useState(false)
@@ -95,6 +98,15 @@ const Home = () => {
 
           {/* Business Section */}
           <BusinessSection />
+
+          {/* Management */}
+          <Management />
+
+          {/* Leading */}
+          <Leading />
+
+          {/* Footer */}
+          <Footer />
         </div>
       ) : (
         <>

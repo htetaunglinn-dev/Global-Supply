@@ -7,7 +7,8 @@ export default {
         primary: '#068FFF',
         secondary: '#262927',
         light_red: '#F05454',
-        milk: '#F5F5F5'
+        milk: '#F5F5F5',
+        deep_blue: '#FFF4E0'
       },
       fontFamily: {
         Roboto: ['Roboto', 'sans-serif'],
