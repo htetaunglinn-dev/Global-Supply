@@ -1,5 +1,5 @@
 import { AiFillLeftCircle, AiFillRightCircle } from 'react-icons/ai'
-import { Fade } from 'react-awesome-reveal'
+import { Fade, Slide } from 'react-awesome-reveal'
 import { profiles } from 'utils/profiles'
 
 const Management = () => {
@@ -51,7 +51,7 @@ const Management = () => {
           id='slider'
           className='grid grid-flow-col gap-7 overflow-x-scroll scroll scroll-smooth overflow-hidde horizontal-hidden py-10 pr-8'
         >
-          <Fade direction='right' triggerOnce>
+          <Slide direction='right' triggerOnce>
             {profiles.map((img, i) => {
               return (
                 <div
@@ -84,7 +84,7 @@ const Management = () => {
                 </div>
               )
             })}
-          </Fade>
+          </Slide>
         </div>
       </section>
     </div>
