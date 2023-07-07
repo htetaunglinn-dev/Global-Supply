@@ -19,7 +19,7 @@ const Footer = () => {
 
           {/* Navlinks */}
           <div>
-            <Fade direction='up' cascade>
+            <Fade direction='up'>
               <ul className='flex flex-col space-y-4 mt-10'>
                 <li>
                   <a href='#' className='link'>
