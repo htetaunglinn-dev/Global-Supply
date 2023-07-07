@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className='ml-[4.5%] w-[86%] flex flex-col md:flex-row gap-5'>
         {/* Left side */}
         <div className='basis-1/2'>
-          <Fade cascade delay={0.3} direction='left'>
+          <Fade cascade delay={0.3} direction='left' duration={1500}>
             <h2 className='font-normal'>ABOUT US</h2>
 
             <p className='text-3xl mt-10 mb-6'>
@@ -28,7 +28,7 @@ const AboutUs = () => {
         {/* Right side */}
         <div className='basis-1/2'>
           <div className='flex flex-col lg:flex-row gap-10 mb-20'>
-            <Fade cascade direction='up'>
+            <Fade cascade direction='up' duration={1500}>
               <div className='basis-1/2 text-milk'>
                 ENCO SUPPLY is a trusted provider of comprehensive industrial
                 solutions. We offer exceptional quality products and
@@ -46,7 +46,7 @@ const AboutUs = () => {
             </Fade>
           </div>
           <div>
-            <Fade direction='right'>
+            <Fade direction='right' duration={1500}>
               <img
                 src={aboutus}
                 alt='worker'

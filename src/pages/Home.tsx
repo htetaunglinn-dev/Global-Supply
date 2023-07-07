@@ -14,8 +14,6 @@ import Leading from './Leading'
 const Home = () => {
   const [areImagesLoaded, setAreImagesLoaded] = useState(false)
 
-  console.log('areImagesLoaded', areImagesLoaded)
-
   useEffect(() => {
     const handleImageLoad = () => {
       setAreImagesLoaded(true)
@@ -55,7 +53,7 @@ const Home = () => {
                 {/* Left side */}
                 <section className='basis-1/2'>
                   <h1 className='text-[3rem] sm:text-7xl md:text-8xl lg:text-9xl font-light'>
-                    <Fade cascade damping={0.5}>
+                    <Fade cascade damping={0.5} duration={1700}>
                       <ul>
                         <li>WE BUILD</li>
                         <li>
@@ -67,7 +65,7 @@ const Home = () => {
                   </h1>
 
                   <div className='my-5 drop-shadow-sm font-normal'>
-                    <Fade cascade>
+                    <Fade cascade duration={2000}>
                       <p>Grab your chance from</p>
                       <p>the biggest supply chain</p>
                     </Fade>

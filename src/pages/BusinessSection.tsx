@@ -4,9 +4,9 @@ import { stocks } from 'utils/stocks'
 
 const BusinessSection = () => {
   return (
-    <section className='w-full bg-white py-32 flex justify-center'>
+    <section className='w-full bg-milk py-32 flex justify-center'>
       <div className='ml-[4.5%] w-[86%]'>
-        <Fade direction='up' cascade delay={0.3}>
+        <Fade direction='up' cascade delay={0.3} duration={1500}>
           <h2 className='font-semibold'>BUSINESS SECTOR</h2>
 
           <div className='flex flex-col items-start sm:flex-row sm:justify-between sm:items-center my-20'>
@@ -23,7 +23,7 @@ const BusinessSection = () => {
         </Fade>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 '>
-          <Fade direction='left'>
+          <Fade direction='left' duration={2000}>
             {stocks.map(data => (
               <div
                 key={data.img}
