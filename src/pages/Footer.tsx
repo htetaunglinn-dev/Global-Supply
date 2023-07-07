@@ -108,7 +108,7 @@ const Footer = () => {
             </Fade>
           </div>
           <div className='text-sm opacity-60 mt-3'>
-            <Fade delay={1e3} cascade damping={1e-1}>
+            <Fade delay={1e3} cascade damping={1e-1} triggerOnce>
               &copy; 2023 - All rights reserved. Powered by Dev Genius
             </Fade>
           </div>
