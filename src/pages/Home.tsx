@@ -47,10 +47,10 @@ const Home = () => {
             <img
               src={hero_background}
               alt='hero-background'
-              className='min-h-screen w-full lg:w-[95%] object-cover shadow-md cut__right'
+              className='min-h-[700px] h-screen w-full lg:w-[95%] object-cover shadow-md cut__right'
             />
             {/* Intro section */}
-            <div className='absolute top-0 h-[100vh] w-full lg:w-[95%] flex justify-center items-center'>
+            <div className='absolute top-0  min-h-[700px] h-[100vh] w-full lg:w-[95%] flex justify-center items-center'>
               <div className='flex w-[80%] pt-20 '>
                 {/* Left side */}
                 <section className='basis-1/2'>
