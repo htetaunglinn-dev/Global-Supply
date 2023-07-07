@@ -30,18 +30,18 @@ const AboutUs = () => {
           <div className='flex flex-col lg:flex-row gap-10 mb-20'>
             <Fade cascade direction='up'>
               <div className='basis-1/2 text-milk'>
-                Ignite Your Journey to Unprecedented Success with Empowering
-                Solutions, Exceptional Quality Products, and Unrivaled Service
-                Excellence. Trust in our unwavering commitment to elevate
-                industries and exceed expectations.
-              </div>
-              <div className='basis-1/2 text-milk/50'>
                 ENCO SUPPLY is a trusted provider of comprehensive industrial
                 solutions. We offer exceptional quality products and
                 unparalleled service to various industries. Choose us for our
                 extensive expertise, competitive prices, and commitment to your
                 success. Experience our unwavering support and become a part of
                 our satisfied customer base
+              </div>
+              <div className='basis-1/2 text-milk/50'>
+                Ignite Your Journey to Unprecedented Success with Empowering
+                Solutions, Exceptional Quality Products, and Unrivaled Service
+                Excellence. Trust in our unwavering commitment to elevate
+                industries and exceed expectations.
               </div>
             </Fade>
           </div>
