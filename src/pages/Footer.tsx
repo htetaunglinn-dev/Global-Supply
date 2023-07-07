@@ -6,7 +6,7 @@ import { Fade, Slide } from 'react-awesome-reveal'
 
 const Footer = () => {
   return (
-    <div className=' w-full py-32 bg-milk '>
+    <div className=' w-full py-32 bg-milk overflow-hidden'>
       <div className='ml-[9.5%] w-[82%] '>
         <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
           {/* Logo */}
@@ -108,7 +108,7 @@ const Footer = () => {
             </Fade>
           </div>
           <div className='text-sm opacity-60 mt-3'>
-            <Fade delay={1e3} cascade damping={1e-1} triggerOnce>
+            <Fade direction='up' delay={1} duration={2000}>
               &copy; 2023 - All rights reserved. Powered by Dev Genius
             </Fade>
           </div>

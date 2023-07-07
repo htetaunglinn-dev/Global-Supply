@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <>
       {areImagesLoaded ? (
-        <div className='bg-secondary scroll-smooth overflow-y-hidden select-none'>
+        <div className='bg-secondary scroll-smooth overflow-hidden select-none'>
           <section className='relative min-h-screen rounded-br-lg'>
             <img
               src={hero_background}
