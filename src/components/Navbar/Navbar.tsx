@@ -26,6 +26,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(true)}
               className='border border-black/40 rounded-md p-1 hover:scale-105'
+              aria-label='Menu Button'
             >
               <RxHamburgerMenu />
             </button>

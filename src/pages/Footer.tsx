@@ -71,18 +71,18 @@ const Footer = () => {
               </Fade>
             </div>
 
-            <div aria-label='icons' className='flex gap-3'>
+            <div className='flex gap-3'>
               <Fade delay={0.5} direction='up'>
-                <a href=''>
+                <a href='#'>
                   <FaFacebookSquare />
                 </a>
-                <a href=''>
+                <a href='#'>
                   <FaSquareWhatsapp />
                 </a>
-                <a href=''>
+                <a href='#'>
                   <FaSquareTwitter />
                 </a>
-                <a href=''>
+                <a href='#'>
                   <ImLinkedin />
                 </a>
               </Fade>
@@ -93,16 +93,16 @@ const Footer = () => {
         <section>
           <div className='flex flex-wrap gap-3'>
             <Fade direction='up' cascade>
-              <a href='' className='link'>
+              <a href='#' className='link'>
                 Contact US
               </a>
-              <a href='' className='link'>
+              <a href='#' className='link'>
                 Term of use
               </a>
-              <a href='' className='link'>
+              <a href='#' className='link'>
                 Privacy Cookie
               </a>
-              <a href='' className='link'>
+              <a href='#' className='link'>
                 Policy
               </a>
             </Fade>
