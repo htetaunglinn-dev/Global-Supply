@@ -19,7 +19,7 @@ const Navbar = () => {
             href='https://wa.me/6588105141'
             className='hidden lg:inline-block rounded border border-black/40 py-2 px-6 hover:bg-black/80 hover:text-white transition-all duration-300 ease-out'
           >
-            Contact Me
+            Contact Us
           </a>
 
           <div className='lg:hidden'>
