@@ -66,7 +66,7 @@ const Home = () => {
 
                   <div className='my-5 drop-shadow-sm font-normal'>
                     <Fade cascade duration={2000}>
-                      <p>Grab your chance from</p>
+                      <p>Grab your chance of</p>
                       <p>the biggest supply chain</p>
                     </Fade>
                   </div>

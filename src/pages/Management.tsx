@@ -52,7 +52,7 @@ const Management = () => {
           className='grid grid-flow-col gap-7 overflow-x-scroll scroll scroll-smooth overflow-hidde horizontal-hidden py-10 pr-8'
         >
           <Slide direction='right' triggerOnce>
-            {profiles.map((img, i) => {
+            {profiles.map((data, i) => {
               return (
                 <div
                   className='cursor-pointer hover:scale-105 ease-in-out duration-300 drop-shadow-sm'
@@ -62,23 +62,20 @@ const Management = () => {
                     <div className='p-2 h-64'>
                       <img
                         className='h-full w-full cut_left object-cover'
-                        src={img}
+                        src={data.url}
                         alt=''
                       />
                     </div>
 
                     <div className='p-2'>
                       <p className='mb-1 text-2xl  font-normal tracking-tight text-white'>
-                        John Doe
+                        {data.name}
                       </p>
                       <p className='mb-2 text-base tracking-tight text-white'>
-                        Manager
+                        {data.role}
                       </p>
 
-                      <p className='py-3 text-base text-white'>
-                        Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.
-                      </p>
+                      <p className='py-3 text-base text-white'>{data.about}</p>
                     </div>
                   </div>
                 </div>
