@@ -49,7 +49,7 @@ const Management = () => {
         {/* Sliders */}
         <div
           id='slider'
-          className='grid grid-flow-col gap-7 overflow-x-scroll scroll scroll-smooth overflow-hidde horizontal-hidden py-10 pr-8'
+          className='grid grid-flow-col gap-7 overflow-x-scroll scroll scroll-smooth overflow-hide scrollbar-hide horizontal-hidden py-10 pr-8'
         >
           <Slide direction='right' triggerOnce>
             {profiles.map((data, i) => {
