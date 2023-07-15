@@ -19,6 +19,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
   background: linear-gradient(45deg, transparent 45px, #ffffff 0);
   cursor: pointer;

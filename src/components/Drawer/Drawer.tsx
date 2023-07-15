@@ -1,5 +1,5 @@
 import { IoCloseOutline } from 'react-icons/io5'
-import logo from 'assets/ENCO.svg'
+import logo from 'assets/global.svg'
 
 interface DrawerProps {
   isOpen: boolean

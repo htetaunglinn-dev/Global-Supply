@@ -1,4 +1,4 @@
-import logo from 'assets/ENCO.svg'
+import logo from 'assets/global.svg'
 import Drawer from 'components/Drawer/Drawer'
 import { useState } from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx'
@@ -37,7 +37,7 @@ const Navbar = () => {
       {/* Drawer */}
       <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
 
-      <div className='px-5 hidden lg:block'>
+      <div className=' hidden lg:block'>
         <ul className='flex gap-5 text-black font-semi-bold tracking-wide'>
           <li>
             <a href='#' className='link'>

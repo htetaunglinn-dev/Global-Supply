@@ -55,7 +55,7 @@ const Management = () => {
             {profiles.map((data, i) => {
               return (
                 <div
-                  className='cursor-pointer hover:scale-105 ease-in-out duration-300 drop-shadow-sm'
+                  className='cursor-pointer hover:scale-105 ease-in-out duration-300 drop-shadow-sm '
                   key={i}
                 >
                   <div className='max-w-sm bg-secondary w-72 h-[460px] border border-gray-200/20 rounded-lg shadow '>
@@ -63,7 +63,7 @@ const Management = () => {
                       <img
                         className='h-full w-full cut_left object-cover'
                         src={data.url}
-                        alt=''
+                        alt='portraits'
                       />
                     </div>
 
