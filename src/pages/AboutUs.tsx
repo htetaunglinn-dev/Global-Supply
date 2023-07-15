@@ -30,7 +30,7 @@ const AboutUs = () => {
           <div className='flex flex-col lg:flex-row gap-10 mb-20'>
             <Fade cascade direction='up' duration={1500}>
               <div className='basis-1/2 text-milk'>
-                ENCO SUPPLY is a trusted provider of comprehensive industrial
+                Global SUPPLY is a trusted provider of comprehensive industrial
                 solutions. We offer exceptional quality products and
                 unparalleled service to various industries. Choose us for our
                 extensive expertise, competitive prices, and commitment to your
