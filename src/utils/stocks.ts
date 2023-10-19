@@ -4,6 +4,8 @@ import img3 from 'assets/stocks/3.jpg'
 import img4 from 'assets/stocks/4.jpg'
 import img5 from 'assets/stocks/5.jpg'
 import img6 from 'assets/stocks/6.jpg'
+import img7 from 'assets/stocks/7.jpg'
+import img8 from 'assets/stocks/8.jpg'
 
 export const stocks = [
   {
@@ -26,9 +28,16 @@ export const stocks = [
     img: img5,
     label: 'Water Jetting Equipment'
   },
-
   {
     img: img6,
     label: 'Marine Valves'
+  },
+  {
+    img: img7,
+    label: 'Red Socket Wrench'
+  },
+  {
+    img: img8,
+    label: 'Stainless Steel Drill Bits'
   }
 ]
