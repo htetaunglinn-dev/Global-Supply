@@ -58,15 +58,15 @@ const Footer = () => {
           {/* Contacts */}
           <div className="mt-10">
             <Fade direction="up">
-              <a href="https://wa.me/6588105141" className="text-2xl">
-                +65 8810 5141
+              <a href="https://wa.me/66804642352" className="text-2xl">
+                +66 804642352
               </a>
             </Fade>
 
             <div className="text-sm my-5">
               <Fade delay={0.3} direction="up" cascade>
                 <p>lavender street</p>
-                <p>Singapore</p>
+                <p>Thailand</p>
                 <p>DWTX GPR</p>
               </Fade>
             </div>
